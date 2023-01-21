@@ -1,0 +1,124 @@
+<html>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- <h2>Calculator</h2> -->
+    <div class="parent">
+      <div class="child">
+        <form name="cal">
+          <table id="calu">
+            <tr>
+              <td colspan="4">
+                <input type="text" id="result" name="disp" disabled />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input
+                  type="button"
+                  id="result1"
+                  value="CLEAR"
+                  onclick="cal.disp.value =' '"
+                />
+              </td>
+              <td>
+                <input
+                  type="button"
+                  id="result1"
+                  value="%"
+                  onclick="cal.disp.value +='%'"
+                />
+              </td>
+              <td>
+                <input
+                  type="button"
+                  id="result1"
+                  value="/"
+                  onclick="cal.disp.value +='/'"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="button" value="7" onclick="cal.disp.value +='7'" />
+              </td>
+              <td>
+                <input type="button" value="8" onclick="cal.disp.value +='8'" />
+              </td>
+              <td>
+                <input type="button" value="9" onclick="cal.disp.value +='9'" />
+              </td>
+              <td>
+                <input
+                  type="button"
+                  id="result1"
+                  value="*"
+                  onclick="cal.disp.value +='*'"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="4" onclick="cal.disp.value +='4'" />
+              </td>
+              <td>
+                <input type="button" value="5" onclick="cal.disp.value +='5'" />
+              </td>
+              <td>
+                <input type="button" value="6" onclick="cal.disp.value +='6'" />
+              </td>
+              <td>
+                <input
+                  type="button"
+                  id="result1"
+                  value="-"
+                  onclick="cal.disp.value +='-'"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="1" onclick="cal.disp.value +='1'" />
+              </td>
+              <td>
+                <input type="button" value="2" onclick="cal.disp.value +='2'" />
+              </td>
+              <td>
+                <input type="button" value="3" onclick="cal.disp.value +='3'" />
+              </td>
+              <td>
+                <input
+                  type="button"
+                  id="result1"
+                  value="+"
+                  onclick="cal.disp.value +='+'"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <input type="button" value="0" onclick="cal.disp.value +='0'" />
+              </td>
+              <td>
+                <input type="button" value="." onclick="cal.disp.value +='.'" />
+              </td>
+              <td>
+                <input
+                  type="button"
+                  id="equal"
+                  value="="
+                  onclick="cal.disp.value = eval(cal.disp.value)"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>&copy copyright 2023 created by Gunjan Balpande</p>
+    </footer>
+  </body>
+</html>

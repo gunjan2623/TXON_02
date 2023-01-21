@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(169, 51, 92, 0.784),
+    rgba(236, 74, 74, 0.852)
+  );
+}
+.parent {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.child {
+  background-color: black;
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+input[type="button"] {
+  width: 100%;
+  padding: 20px 40px;
+  border: none;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(70, 61, 61);
+  color: white;
+}
+input[type="button"]:hover {
+  background-color: rgb(137, 59, 59);
+}
+/* input[type="text"]  */
+#result {
+  border-bottom: 0;
+  width: 100%;
+  height: 120px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+#result1 {
+  border-top: 0;
+  background-color: rgb(35, 33, 33);
+  color: white;
+}
+#result1:hover {
+  background-color: rgba(116, 49, 49, 0.791);
+}
+#equal {
+  background-color: rgb(209, 76, 24);
+}
+#equal:hover {
+  background-color: rgb(130, 45, 11);
+}
+footer {
+  position: absolute;
+  top: 92%;
+  left: 40%;
+  text-align: center;
+}
